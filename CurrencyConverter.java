@@ -7,30 +7,30 @@ public class CurrencyConverter {
         private static final double EUR_TO_JPY = 160.38;
     
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-    
-            System.out.println("Currency Converter");
-            System.out.println("Available currencies: USD, EUR, JPY");
-            System.out.print("Enter the source currency (USD, EUR, JPY): ");
-            String sourceCurrency = scanner.nextLine().toUpperCase();
-    
-            System.out.print("Enter the target currency (USD, EUR, JPY): ");
-            String targetCurrency = scanner.nextLine().toUpperCase();
-    
-            if (sourceCurrency.equals(targetCurrency)) {
-                System.out.println("Source and target currencies are the same.");
-                return;
-            }
-    
-            System.out.print("Enter the amount to convert: ");
-            double amount = scanner.nextDouble();
-    
-            double convertedAmount = convertCurrency(sourceCurrency, targetCurrency, amount);
-    
-            if (convertedAmount == -1) {
-                System.out.println("Invalid currency input.");
-            } else {
-                System.out.printf("Converted amount: %.2f %s%n", convertedAmount, targetCurrency);
+            try (Scanner sc = new Scanner(System.in)) {
+                System.out.println("Currency Converter");
+                System.out.println("Available currencies: USD, EUR, JPY");
+                System.out.print("Enter the source currency (USD, EUR, JPY): ");
+                String sourceCurrency = sc.nextLine().toUpperCase();
+   
+                System.out.print("Enter the target currency (USD, EUR, JPY): ");
+                String targetCurrency = sc.nextLine().toUpperCase();
+   
+                if (sourceCurrency.equals(targetCurrency)) {
+                    System.out.println("Source and target currencies are the same.");
+                    return;
+                }
+   
+                System.out.print("Enter the amount to convert: ");
+                double amount = sc.nextDouble();
+   
+                double convertedAmount = convertCurrency(sourceCurrency, targetCurrency, amount);
+   
+                if (convertedAmount == -1) {
+                    System.out.println("Invalid currency input.");
+                } else {
+                    System.out.printf("Converted amount: %.2f %s%n", convertedAmount, targetCurrency);
+                }
             }
         }
     
@@ -50,6 +50,7 @@ public class CurrencyConverter {
             } else {
                 return -1; // Invalid input
             }
+            
         }
     }
 
