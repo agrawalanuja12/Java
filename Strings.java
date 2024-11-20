@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 public class Strings {
     public static void printletter(String str){
         for(int i = 0; i<str.length(); i++){
@@ -19,11 +19,70 @@ public class Strings {
         }
         return true;
     }
-    
+
+    public static float getShortestPath(String path){
+        int x = 0, y = 0;
+        for(int i=0; i<path.length(); i++){
+            char dir = path.charAt(i);
+
+            // south...
+            if(dir == 'S'){
+                y--;
+            }
+            // west...
+            else if(dir == 'W'){
+                x--;
+            }
+            // north...
+            else if(dir == 'N'){
+                y++;
+            }
+            // east...
+            else{
+                x++;
+            }
+        } 
+        int X2= x*x;
+        int Y2= y*y;
+        return (float)Math.sqrt(X2 + Y2);
+        
+    }
+
     public static void main(String args[]){
 
-        String str = "racectcar";
-        System.out.println(ispallindrome(str));
+        String s1 = "Great";
+        String s2 = "Great";
+        String s3 = new String("Great");
+
+        if (s1 == s2){
+            System.out.println("strings are equal");
+        }else{
+            System.out.println("strings are not equal");
+        }
+        if (s1 == s3){  
+            System.out.println("strings are equal");
+        }else{
+            System.out.println("strings are not equal");
+        }
+
+        // Compare method in string....
+        if(s1.equals(s2)){
+        System.out.println("strings are equal");
+    }else{
+        System.out.println("strings are not equal");
+    }
+    if (s2.equals(s3)){
+        System.out.println("strings are equal");
+    }else{
+        System.out.println("strings are not equal");
+    }
+
+
+        // String path = "WNEENESENNNSSS";
+        // System.out.println(getShortestPath(path));
+
+        // String str = "racectcar";
+        // System.out.println(ispallindrome(str));
     //     // char arr[] = {'a','b','c','d','e'};
     //     // String str1 = "abcde";
     //     // String str2 = new String("xyz");
@@ -45,7 +104,7 @@ public class Strings {
     // String Lastname = "Agrawal";
     // String Fullname = Firstname + " " + Lastname; // Concatenation method.....
     // // System.out.println(Fullname);
-    // // System.out.println(Fullname.charAt(14));
+    // // System.out.println(Fullname.charAt(14)); // search element from string.....
     // printletter(Fullname);
 
     }
