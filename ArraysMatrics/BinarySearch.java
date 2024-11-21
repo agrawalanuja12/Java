@@ -1,3 +1,4 @@
+package ArraysMatrics;
 public class BinarySearch {
     
     public static int Bin_Search(int numbers[], int key){

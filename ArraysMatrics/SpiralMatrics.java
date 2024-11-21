@@ -1,3 +1,4 @@
+package ArraysMatrics;
 public class SpiralMatrics {
 
     public static void printSpiral(int matrix[][]){

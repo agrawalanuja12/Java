@@ -1,3 +1,4 @@
+package ArraysMatrics;
 public class SubarraysSum {
 
     public static void Max_sum(int numbers[]){

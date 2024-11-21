@@ -1,3 +1,4 @@
+package ArraysMatrics;
 public class Stock {
     
     public static int Buy_sell_stock(int prices[]){

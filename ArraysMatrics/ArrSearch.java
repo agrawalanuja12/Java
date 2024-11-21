@@ -1,3 +1,4 @@
+package ArraysMatrics;
 
 public class ArrSearch {
     public static int linearSearch(int array[] , int key){

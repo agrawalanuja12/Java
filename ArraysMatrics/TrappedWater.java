@@ -1,3 +1,4 @@
+package ArraysMatrics;
 public class TrappedWater {
     public static int trap_Rainwater(int height[]){
         int n = height.length;

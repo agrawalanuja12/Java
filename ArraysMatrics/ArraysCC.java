@@ -1,3 +1,4 @@
+package ArraysMatrics;
 
 public class ArraysCC {
 
