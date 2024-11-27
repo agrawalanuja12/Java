@@ -1,6 +1,11 @@
 package StringsFunctions;
 import java.util.*;
 public class StringsBasics {
+
+    /*strings are immutable....
+     because of time complexity O(n^2)
+     for printing large numbers of strings */
+     
     public static void printletter(String str){
         for(int i = 0; i<str.length(); i++){
             System.out.print(str.charAt(i) + " ");
