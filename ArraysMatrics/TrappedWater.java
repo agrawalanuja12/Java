@@ -40,3 +40,14 @@ public class TrappedWater {
         System.out.println("Total rain water trapped b/w heights: " +trap_Rainwater(height));
     }
 }
+//Project Name: Rainwater Trapping Simulation
+
+// Project Description:
+// Implemented a Java program to calculate rainwater trapped between bar heights using efficient array-based algorithms.
+
+// Key Features:
+// Precomputed left and right boundaries for optimized calculations.
+// Calculated total trapped water using boundary comparisons.
+
+// Technologies Used:
+// Java, Arrays, Algorithm Design.

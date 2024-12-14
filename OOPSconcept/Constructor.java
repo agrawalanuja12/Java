@@ -35,7 +35,7 @@ class Install{
     int reviews[];
     Install(){
         reviews=new int[5];
-        System.out.println("my default constructor");
+        System.out.println("my default constructor");//default or non-parameterized constructor....
     }
 
     Install(String app){ // initialized constructor....
@@ -51,7 +51,7 @@ class Install{
         reviews=new int[5];
         this.app=Ins1.app;
         this.downloads=Ins1.downloads;//copy cnstructor
-        this.reviews=Ins1.reviews;
+        this.reviews=Ins1.reviews;// copied the reference of the array..
     }
 
 }

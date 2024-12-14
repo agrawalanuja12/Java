@@ -53,6 +53,17 @@ public class CurrencyConverter {
             
         }
     }
+    // Currency Converter Project
 
+    // Description: Built a console-based application to convert amounts between multiple currencies using predefined exchange rates.
+    // Key Features: Supported currencies like USD, INR, EUR, and JPY. Handled user inputs, input validation, and precise calculations.
+    // Tech Stack: Java, HashMap for storing rates, Scanner for user interaction.
+    // Skills Demonstrated: Data structures, user input handling, basic arithmetic, and formatted output.
+    
+    
+    
+    
+    
+    
     
 
